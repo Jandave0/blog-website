@@ -1,0 +1,148 @@
+//global styles
+$primary-color: #285A48;
+$secondary-color: #408A71;
+$text-color: #091413;
+$text-ash-green: #B0E4CC;
+$dark-background: #343a40;
+$text-white: #FFFFFF;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+    font-size: 4.5em;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 4em;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+header{
+    nav{
+        .nav-link{
+            text-transform: uppercase; // transfom text to uppercase
+            font-size: 1em;
+            color: $text-color;
+            font-weight: 500;
+            margin-left: 20px;
+            &:hover{
+                color: $text-ash-green;
+            }
+
+        }
+
+        .logo{
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight: 500;
+            span{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $dark-background;
+    color: $text-white;
+    h3{
+        font-size: 1.5em;
+        color: $secondary-color;
+    }
+
+    ul{
+        li{
+            padding: 5px 0;
+            
+        }
+    }
+    a{
+        color: $text-white;
+        font-size: 1.2em;
+        text-decoration: none;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+    li{
+        list-style: none;
+        color: $text-color;
+        margin-bottom: 10px; 
+    }
+}
+
+.btn-primary{
+    background-color: $primary-color;
+    border: $primary-color 1px solid;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $secondary-color;
+        border: $secondary-color 1px solid;
+    }
+}
+
+.btn-secondary{
+    background-color: $secondary-color;
+    border: $secondary-color 1px solid;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $primary-color;
+        border: $primary-color 1px solid;
+    }
+}
+
+
+.section-1{
+    .hero{
+       
+        background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0)), url('../images/hero.jpg');
+        min-height: 800px;
+        
+        color: $text-white;
+        span{
+            color: $secondary-color;    
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.section-2{
+    img{
+        border-radius: 35px; 
+
+    }    
+    span{
+        color: $primary-color;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+}
